@@ -4,13 +4,21 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<title></title>
 	<link rel="stylesheet" href="__PUBLIC__/Css/login.css" />
+        <script type="text/javascript" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Js/jquery-validate.js"></script>
+	<script type='text/javascript'>
+		var checkAccount = "<?php echo U('checkAccount');?>";
+		var checkUname = "<?php echo U('checkUname');?>";
+		var checkVerify = "<?php echo U('checkVerify');?>";
+	</script>
+	<script type="text/javascript" src="__PUBLIC__/Js/login.js"></script>
 </head>
 <body>
 	<div id='top-bg'></div>
 	<div id='login-form'>
 		<div id='login-wrap'>
-			<p>还没有微博帐号？<a href=''>立即注册</a></p>
-			<form action="" method='post' name='login'>
+			<p>还没有微博帐号？<a href='<?php echo U("register");?>'>立即注册</a></p>
+			<form action="<?php echo U('login');?>" method='post' name='login'>
 				<fieldset>
 					<legend>用户登录</legend>
 					<p>

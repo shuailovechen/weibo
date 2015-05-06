@@ -8,7 +8,7 @@
 	font:12px/1.125 Arial,Helvetica,sans-serif;_font-family:"SimSun";
 }
 body{
-	background:url(../images/body_bg.jpg) no-repeat fixed;
+	background:url(../images/body_bg.jpg) repeat fixed;
 }
 ul, ol {
 	list-style: none;
